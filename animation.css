@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height:30vh;
+    width:15vw;
+    padding: 10px;
+    background-color: aqua;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-color{
+    animation-name: color;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    background-color: aqua;
+
+}
+@keyframes color{
+    from{background-color: rgb(0, 255, 157);}
+    to{background-color: blueviolet;}
+}
+.box-rotate{
+    animation-name: rotate1;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    background-color: blue;
+}
+@keyframes rotate1{
+    from{background-color: blue;}
+    to{background-color: cadetblue;transform: rotate(360deg);}
+}
+.box-anti{
+    animation-name: anti;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    background-color: darkcyan;
+}
+@keyframes anti {
+    from{background-color: darkcyan;}
+    to{background-color: darkred;transform: rotate(-360deg);}
+}
+.box-shape{
+    animation-name: shape;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    background-color: pink;
+}
+@keyframes shape{
+    from{background-color: pink;}
+    to{background-color:violet;border-radius: 120px;}
+}
+.box-size{
+    animation-name:size;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    background-color: darksalmon;
+}
+@keyframes size{
+    from{background-color: darksalmon;}
+    to{background-color: deeppink; height:10vh; width:5vw;}
+}
